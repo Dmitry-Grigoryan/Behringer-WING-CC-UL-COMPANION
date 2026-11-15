@@ -1,0 +1,9 @@
+The WING icon silhouettes and color swatches in src/icons.js were derived from
+the icon and color charts on pp. 247–249 of WING Remote Protocols 3.1.0,
+by Patrick-Gilles Maillot, published for Behringer.
+
+https://cdn-media.empowertribe.com/2106004e217b8eb2639d93672823eef5/WING_Remote-Protocols-3.1-03.pdf#page=247
+
+The project's MIT license applies to the original project code and does not
+grant rights to redistribute third-party artwork. No separate redistribution
+license for the WING artwork was verified.

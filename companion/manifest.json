@@ -1,0 +1,31 @@
+{
+  "id": "wing-userlayer",
+  "name": "Behringer: WING CC/UL",
+  "shortname": "Behringer_WING_CC_UL",
+  "description": "Mirror WING Custom Controls on Stream Deck+",
+  "version": "1.7.0",
+  "license": "MIT",
+  "manufacturer": "Behringer",
+  "products": [
+    "WING CC/UL"
+  ],
+  "keywords": [
+    "wing",
+    "custom controls"
+  ],
+  "runtime": {
+    "type": "node22",
+    "api": "nodejs-ipc",
+    "apiVersion": "2.1.2",
+    "entrypoint": "../main.js"
+  },
+  "legacyIds": [],
+  "repository": "",
+  "bugs": "",
+  "maintainers": [
+    {
+      "name": "Grigoryan Dmitry"
+    }
+  ],
+  "type": "connection"
+}
