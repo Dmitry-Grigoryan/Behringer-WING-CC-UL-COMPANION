@@ -1,15 +1,17 @@
 # Behringer: WING CC/UL for Bitfocus Companion
 
-A Companion connection module by **Grigoryan Dmitry** that mirrors the assignments of a Behringer WING Compact on a Stream Deck+. Version **1.7.0** was developed and tested on macOS with Companion **5.0.1**. Raspberry Pi deployment has yet to be tested.
+This module complements the main Behringer WING module for Bitfocus Companion by bringing Custom Controls to a Stream Deck+ when your console lacks those physical buttons. Assign functions directly on the WING console, and the Stream Deck+ follows those assignments automatically, without having to open the Companion editor each time.
 
 ## Install
 
 1. Download `wing-userlayer-1.7.0.tgz` from the [GitHub releases](https://github.com/Dmitry-Grigoryan/Behringer-WING-CC-UL-COMPANION/releases) and import it in Companion under **Modules → Import module package**.
 2. Add **Behringer: WING CC/UL** as a connection. Enter the WING IP address, or leave it blank for automatic discovery. If several consoles answer, enter the address of the one you want to control.
 3. In **Presets**, choose **CUSTOM CONTROLS** for Layers 1–16, each with eight buttons and four encoders. **USER LAYER** lists the 16 buttons on WING Compact pages U1–U4.
-4. For a Stream Deck+ LCD strip, place the encoder display preset in row 3. Place the corresponding preset in row 4 to receive rotation and physical encoder presses.
+4. In the Companion **Buttons** grid, place the **same encoder preset twice in the same column**. Put it in **row 3** for the Stream Deck+ LCD display and in **row 4** for physical encoder turns and presses.
 
-Encoder turns use separate **Rotate Left** and **Rotate Right** actions. The physical encoder presses default to page 1, no action, next page and previous page respectively. For this navigation, enable **TCP Remote Control** in Companion. The module uses the local port **16759** by default.
+![Companion button grid showing rows 3 and 4 for the same encoder preset, with main page, Page Up and Page Down shortcuts](docs/stream-deck-plus-layout.png)
+
+In row 4, each encoder uses separate **Rotate Left** and **Rotate Right** actions. Pressing **encoder 1** returns to the **main page (Companion page 1)**. **Encoder 2** has no press action. Press **encoder 3** for **Page Up** and **encoder 4** for **Page Down**. These page shortcuts use Companion's **TCP Remote Control**, with local port **16759** by default.
 
 ## Supported functions
 
