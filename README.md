@@ -11,22 +11,54 @@ A Companion connection module by **Grigoryan Dmitry** that mirrors the assignmen
 
 Encoder turns use separate **Rotate Left** and **Rotate Right** actions. The physical encoder presses default to page 1, no action, next page and previous page respectively. For this navigation, enable **TCP Remote Control** in Companion. The module uses the local port **16759** by default.
 
-## Function coverage
+## Supported functions
 
-The module reads assignments and supported target states from WING over OSC and displays the target name, color, icon and function. Supported assignments include Mute, Solo, DCA Mute, inserts, faders, pan, sends, FX parameters, and selected utility and transport commands. The built-in console screen shortcuts are **Global Page → FX** and **CH Page → EQ**, verified on the test WING Compact.
+### Buttons — Custom Controls and User Layer
 
-Picture and sound behavior for every assignment has not been verified on physical hardware. Scene recall, GPIO with external equipment, and USB and SD transport with media require additional testing. DAW/MCU, MIDI assignments, View Page, and other CH Page or Global Page screens are outside the implemented set for 1.7.0.
+- Channel Mute and Solo
+- DCA Mute and Mute Group
+- Insert Pre and Insert Post
+- Sends on Fader
+- Spill — DCA, FX, Bus, Main, Matrix, Automix X/Y
+- Fader Page — fader bank selection
+- CH Page → EQ and Global Page → FX
+- FX Parameter — binary parameters
+- Other — Talkback A/B, Main/Alt, DAW Switch, Monitor A/B/A+B, Monitor Dim/Mono/Swap/Mute, Automix X/Y, Channel Prev/Next, fader presets at −∞, −10 and 0 dB
+- Show Control — Go, Prev, Next, Go Prev, Go Next
+- Scene Recall — tags 1–128
+- GPIO Toggle and GPIO Push
+- USB Play/Rec — Stop, Play, Pause, Play/Stop, Play/Pause, Next, Prev, Rec Stop, Record, Rec Pause, Rec New File
+- SD A/B — Stop, Play, Record, Pause, Play/Stop, Play/Pause, Add Marker, Prev/Next Marker, Go to Marker, Play Marker, Prev/Next Session, direct session and marker selection, Return to Zero
 
-## Build the release package
+### Encoders — Custom Controls
 
-Use Node.js **22.20 or later in the 22.x series**.
+- Fader and Pan
+- DCA Fader
+- Selected Send and Fixed Send
+- FX Parameter — numeric parameters
+- Monitor A/B levels
+- Lamp, Glow and Patch brightness
+- SD A/B — position, marker and session navigation
 
-```sh
-npm ci
-npm run build
-```
+## Unsupported or not yet tested
 
-The build writes `wing-userlayer-1.7.0.tgz` in the project directory. Upload the package as an asset of the `v1.7.0` GitHub release.
+### Unsupported
+
+- **CH Page and Global Page beyond EQ and FX, and View Page** — the console uses numeric screen IDs. The remaining IDs and overview navigation have yet to be verified.
+- **Solo Tap, Meter Tap and CC Bank** — command handling is not implemented.
+- **Spill to SELCH or ACTCH** — target mapping has not been verified.
+- **GPIO Delay and Fader Start** — trigger handling is not implemented.
+- **FX buttons for non-binary parameters and encoder parameters with a list of values** — the module currently handles binary button parameters and numeric encoder parameters.
+- **Talkback Level on an encoder and the SD Select Session menu** — command handling is not implemented.
+- **DAW/MCU Buttons, V-Pots, Jog Wheel, MIDI CC, MIDI Note and Program Change** — not implemented or tested over USB/DIN. Direct network triggering has not been verified.
+
+### Implemented but not fully tested on hardware
+
+- Show Control and Scene Recall with a loaded show
+- GPIO Toggle and Push with external equipment
+- USB Play/Rec and SD A/B transport with media
+- Talkback and individual monitor controls on a live mix
+- Every fader bank, Spill target, send combination and FX parameter
 
 ## License and assets
 
