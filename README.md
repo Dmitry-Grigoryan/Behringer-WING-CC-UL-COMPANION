@@ -9,7 +9,8 @@ This module complements the main Behringer WING module for Bitfocus Companion by
 3. In **Presets**, choose **CUSTOM CONTROLS** for Layers 1–16, each with eight buttons and four encoders. **USER LAYER** lists the 16 buttons on WING Compact pages U1–U4.
 4. In the Companion **Buttons** grid, place the **same encoder preset twice in the same column**. Put it in **row 3** for the Stream Deck+ LCD display and in **row 4** for physical encoder turns and presses.
 
-![Companion button grid showing rows 3 and 4 for the same encoder preset, with main page, Page Up and Page Down shortcuts](docs/stream-deck-plus-layout.png)
+<img width="2320" height="1056" alt="download" src="https://github.com/user-attachments/assets/ad6a5416-05c3-4ca3-ab1d-aa20346613b4" />
+
 
 In row 4, each encoder uses separate **Rotate Left** and **Rotate Right** actions. Pressing **encoder 1** returns to the **main page (Companion page 1)**. **Encoder 2** has no press action. Press **encoder 3** for **Page Up** and **encoder 4** for **Page Down**. These page shortcuts use Companion's **TCP Remote Control**, with local port **16759** by default.
 
