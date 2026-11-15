@@ -3,7 +3,7 @@
   "name": "Behringer: WING CC/UL",
   "shortname": "Behringer_WING_CC_UL",
   "description": "Mirror WING Custom Controls on Stream Deck+",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "license": "MIT",
   "manufacturer": "Behringer",
   "products": [
@@ -20,8 +20,8 @@
     "entrypoint": "../main.js"
   },
   "legacyIds": [],
-  "repository": "",
-  "bugs": "",
+  "repository": "git+https://github.com/Dmitry-Grigoryan/Behringer-WING-CC-UL-COMPANION.git",
+  "bugs": "https://github.com/Dmitry-Grigoryan/Behringer-WING-CC-UL-COMPANION/issues",
   "maintainers": [
     {
       "name": "Grigoryan Dmitry"
