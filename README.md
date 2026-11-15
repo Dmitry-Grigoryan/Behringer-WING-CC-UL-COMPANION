@@ -1,7 +1,9 @@
 # Behringer: WING CC/UL for Bitfocus Companion
+This is a separate Bitfocus Companion module that complements the main Behringer WING integration.
 
-This module complements the main Behringer WING module for Bitfocus Companion by bringing Custom Controls to a Stream Deck+ when your console lacks those physical buttons. Assign functions directly on the WING console, and the Stream Deck+ follows those assignments automatically, without having to open the Companion editor each time.
+It turns your Stream Deck+ into a Custom Controls surface for the Behringer WING Compact, and any Stream Deck into a User Layers surface for the Behringer WING Full Size and WING Rack.
 
+Assign functions directly on the WING, and your Stream Deck follows those assignments automatically, without having to open the Bitfocus Companion editor each time.
 ## Install
 
 1. Download `wing-userlayer-1.7.0.tgz` from the [GitHub releases](https://github.com/Dmitry-Grigoryan/Behringer-WING-CC-UL-COMPANION/releases) and import it in Companion under **Modules → Import module package**.
@@ -10,6 +12,8 @@ This module complements the main Behringer WING module for Bitfocus Companion by
 4. In the Companion **Buttons** grid, place the **same encoder preset twice in the same column**. Put it in **row 3** for the Stream Deck+ LCD display and in **row 4** for physical encoder turns and presses.
 
 <img width="2320" height="1056" alt="download" src="https://github.com/user-attachments/assets/ad6a5416-05c3-4ca3-ab1d-aa20346613b4" />
+<img width="1774" height="887" alt="exec-cbdacff4-b101-4cb9-bf73-be4e9f902972" src="https://github.com/user-attachments/assets/6ad4e491-e6d0-4b39-a354-fa73f3386e10" />
+
 
 
 In row 4, each encoder uses separate **Rotate Left** and **Rotate Right** actions. Pressing **encoder 1** returns to the **main page (Companion page 1)**. **Encoder 2** has no press action. Press **encoder 3** for **Page Up** and **encoder 4** for **Page Down**. These page shortcuts use Companion's **TCP Remote Control**, with local port **16759** by default.
